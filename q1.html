@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>What is SEO?</title>
+<meta description="SEO is search engine optimization. SEO is used to improve website performance on SERPs to get traffi and increase conversion.">
+<link rel="icon" href="https://pwskills.com/images/favicon.ico" type="image/x-icon">
+<meta name="robots" content="index,follow">
+  <meta name="keywords" content="seo, google seo, yahoo seo, bing seo">
+  <meta name="author" content="Gaurav - SEO Expert">
+
+  <!-- internal css-->
+  <style>
+    li {
+      display: inline;
+    }
+    ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+li {
+  background-color: black;
+}
+
+.csspriority {
+  background-color: red;
+}
+
+#idpriority {
+  background-color: green;
+}
+    
+  </style>
+<!-- External CSS-->
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+         
+        <!--class selector has high priority -->
+        <li class="csspriority">SEO</li>
+        <!--id selector has higher priority than class -->
+        <li id="idpriority" class="csspriority">Contact</li>
+        <!--inline style has the highest priority -->
+        <li id="idpriority" class="csspriority" style="background-color:yellow;">On-Page SEO</li>
+        <!--inline CSS-->
+        <li style="background-color:deeppink;">Off-Page SEO</li>
+        <li style="background-color:yellowgreen;">Technical SEO</li>
+      </ul>
+    </nav>
+  </header>
+
+  <article>
+    <header>
+<h1>What is SEO?</h1>
+</header>
+
+<section>
+<p>The full form of SEO is Search Engine Optimization. SEO is basically to optimize your webpage for important and niche-related keywords and get relevant traffic by ranking your webpage on relevant keywords. For eg. For an IAS Coaching Institute in Delhi, "best IAS Coaching in Delhi" would be one of the important keywords to rank for traffic and conversion.</p>
+</section>
+</article>
+<hr>
+<footer>
+  <p style="text-align: center;">Gaurav &copy; All rights reserved </p>
+</footer>
+
+</body>
+</html>

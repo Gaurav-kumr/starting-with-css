@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sign-up Form & Sign-in Form</title>
+<meta description="Solution of PW assignments">
+<style>
+
+	h1 {
+ text-align: center;
+	}
+
+	.form {
+            background-color:  #ffcccc;
+            padding: 20px;
+            border: 1px solid ;
+            width: 300px;
+            margin: 50px auto;
+            border-radius: 10px;
+        }
+
+        #firstName {
+        	background-color:  #ff6666;
+        }
+
+        #lastName {
+        	background-color: #9999ff;
+        }
+
+        #email {
+        	background-color:  #66ffe0 ;
+        }
+
+        #age {
+        	background-color: lightgreen;
+        }
+
+         button {
+         	opacity: 60%;
+         }
+
+
+</style>
+<script>
+	function myfunction() {
+		var x=document.getElementById("password");
+		if(x.type === "password") {
+			x.type ="text";
+		} else {
+			x.type="password";
+		}
+	}
+</script>
+</head>
+<body>
+	<div class=col-md-4>
+	<h1>Sign-up Form</h1>
+	<form class="form">
+		<label for="firstName">First Name:
+			<input type="text" name="firstName" placeholder="Tyler" id="firstName" required minlength=3 max=20></label>
+			<br>
+			<label for="lastName">Last Name:
+			<input type="text" name="lastName" placeholder="Durden" id="lastName" required minlength=3 max=20></label>
+			<br>
+			<label for="email">Email:
+				<input type="email" name="email" placeholder="xyz@.com" id="email" required /></label>
+			<br>
+			<label for="password">Password:
+			<input type="password" name="password" id="password" placeholder="*****" id="password" required min=8></label>
+			<input type="checkbox" onclick="myfunction()">Show Password
+			<br>
+			<label for="confirmPassword">Confirm Password:
+			<input type="password" name="confirmPassword" placeholder="*****" id="password" required min=8></label><br>
+			<label for="age">Age: <input type="number" name="age" placeholder="25" id="age" required min=0 max=150 /> </label>
+			<br>
+			<label for="">Gender: <input type="radio" id="male" value="male" name="gender" checked /><label for="male">Male</label>
+<input type="radio" id="female" value="female" name="gender" /> <label for="female">Female</label> <input type="radio" id="other" value="other" name="gender" /> <label for="other">Other</label>
+</label>
+<br>
+<label for="terms">terms:
+<input type="checkbox" id="terms" required /> I agree to terms and conditions
+</label>
+<br>
+<button style="background-color:darkblue; color:white;" type="submit">Register</button>
+</form>
+
+	</form>
+
+
+</body>
+</html>
